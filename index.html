@@ -10,22 +10,26 @@
 
 </head>
 <body>
-    <section class="loggedin">
+    <section class="hide" id="profile">
         <h1>Your Profile</h1>
+        <input type="text" id="phone" placeholder="+5211234567890" disabled>
         <input type="text" id="name" placeholder="name">
         <input type="text" id="instagram" placeholder="@username">
         <button id="editar">Editar</button>
+        <button id="logout">LogOut</button>
     </section>
-    <section class="loggedout">
+    <section class="show" id="login">
         <h1>LogIn</h1>
-        <button id="google" class="button google">LogIn Github</button>
-        <hr>
+        
         <div>
-            <input type="text" id="number" placeholder="number">        
+            <input type="text" id="number" placeholder="number" value="+5217712936271">        
             <button class="number" id="numberButton">LogIn Number</button>
-            <p id="recaptcha-container"></p>
-                       
+            <p id="recaptcha-container"></p>                                  
         </div> 
+        <div class="validate">
+            <input type="text" id="code" placeholder="code">        
+            <button class="validatebtn" id="validate">Validate</button>
+        </div>
         
     </section>
 </body>
@@ -45,47 +49,7 @@
   };
   firebase.initializeApp(config);
 </script>
-<script >
-    // var google = document.getElementById('google')
-    // var provider = new firebase.auth.GoogleAuthProvider();
-    // google.addEventListener('click', function(){
-    //     firebase.auth().signInWithPopup(provider)
-    //         .then(function(result) {
-    //             console.log(result.user)
-    //         })
-    // })
-    
-    
-    var numberButton = document.getElementById('numberButton')
-    
-    
-
-    numberButton.addEventListener('click', function(){
-        var number = document.getElementById('number').value
-        console.log(number)
-        window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-        var appVerifier = window.recaptchaVerifier;
-        
-        
-        firebase.auth().signInWithPhoneNumber(number, appVerifier)
-            .then(function (confirmationResult) {                
-            console.log(confirmationResult)
-            
-            //confirm(code)
-
-            }).catch(function (error) {
-            // Error; SMS not sent
-            console.log(error)
-            // ...
-            });
-
-    })
-
-    function confirm(code){
-        
-        
-    }
-    
-
+<script src="app.js">
+ 
 </script>
 </html>

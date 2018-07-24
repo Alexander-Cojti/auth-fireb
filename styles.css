@@ -13,14 +13,12 @@ button{
     font-family: 'Gaegu', cursive;
     width: 100%;
     padding: 1%;
+    margin-bottom: 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.5rem;
 }
-.google{
-    background-color: #d34836;
-    color: whitesmoke;
-}
+
 .number{
     background-color: #25D366;
     color: whitesmoke;
@@ -44,10 +42,10 @@ section{
     justify-content: center;
     align-items: center;
 }
-.loggedin{
+.hide{
     display: none;
 }
 
-.loggedout{
+.show{
     display: block;
 }
