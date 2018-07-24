@@ -1,0 +1,53 @@
+body{
+    font-family: 'Gaegu', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-sizing: border-box;
+    margin: 0;    
+    height: 80vh;
+    text-align: center;    
+    background-color: #f0f0f0;
+}
+button{
+    font-family: 'Gaegu', cursive;
+    width: 100%;
+    padding: 1%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.google{
+    background-color: #d34836;
+    color: whitesmoke;
+}
+.number{
+    background-color: #25D366;
+    color: whitesmoke;
+}
+h1{
+    font-size: 2rem;
+}
+input{
+    font-family: 'Gaegu', cursive;
+    width: 100%;
+    padding: 1%;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+section{
+    width: 50%;
+    padding: 5% 10%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loggedin{
+    display: none;
+}
+
+.loggedout{
+    display: block;
+}
