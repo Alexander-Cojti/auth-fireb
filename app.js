@@ -1,6 +1,5 @@
 var numberButton = document.getElementById('numberButton')
 var validateButton = document.getElementById('validate')
-
 var profile = document.getElementById('profile')
 var login = document.getElementById('login')
 
@@ -23,7 +22,7 @@ numberButton.addEventListener('click', function(){
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
     var appVerifier = window.recaptchaVerifier;
     
-    
+ 
     firebase.auth().signInWithPhoneNumber(number, appVerifier)
         .then(function (confirmationResult) {                
         console.log(confirmationResult)
@@ -39,6 +38,8 @@ numberButton.addEventListener('click', function(){
 
 })
 
+
+//validateUser
 validateButton.addEventListener('click', function(){
     var code = document.getElementById('code').value
     console.log(code)
@@ -96,6 +97,7 @@ var logout = document.getElementById('logout')
 logout.addEventListener('click', function(){
     firebase.auth().signOut().then(function() {
         hideProfile()
+        localStorage.removeItem('user')
       }).catch(function(error) {
         console.log(error)
       });

@@ -1,5 +1,5 @@
 body{
-    font-family: 'Gaegu', cursive;
+    font-family: 'Oswald', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -10,7 +10,7 @@ body{
     background-color: #f0f0f0;
 }
 button{
-    font-family: 'Gaegu', cursive;
+    font-family: 'Oswald', sans-serif;
     width: 100%;
     padding: 1%;
     margin-bottom: 10px;
@@ -27,7 +27,7 @@ h1{
     font-size: 2rem;
 }
 input{
-    font-family: 'Gaegu', cursive;
+    font-family: 'Oswald', sans-serif;
     width: 100%;
     padding: 1%;
     font-size: 1.3rem;

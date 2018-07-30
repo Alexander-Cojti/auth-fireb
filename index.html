@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LogIn Firebase</title>
-    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 
 </head>
 <body>
@@ -19,8 +19,7 @@
         <button id="logout">LogOut</button>
     </section>
     <section class="show" id="login">
-        <h1>LogIn</h1>
-        
+        <h1>LogIn</h1>        
         <div>
             <input type="text" id="number" placeholder="number" value="">        
             <button class="number" id="numberButton">LogIn Number</button>
@@ -29,8 +28,7 @@
         <div class="validate">
             <input type="text" id="code" placeholder="code">        
             <button class="validatebtn" id="validate">Validate</button>
-        </div>
-        
+        </div>        
     </section>
 </body>
 
@@ -40,16 +38,14 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyDKffDj1yNE5ZMGeESjosOFfnc47qGFl6I",
-    authDomain: "fir-firebase-b64eb.firebaseapp.com",
-    databaseURL: "https://fir-firebase-b64eb.firebaseio.com",
-    projectId: "fir-firebase-b64eb",
-    storageBucket: "fir-firebase-b64eb.appspot.com",
-    messagingSenderId: "856341620154"
+    apiKey: "Your-API-KEY",
+    authDomain: "Your-domain",
+    databaseURL: "your-dbUrl",
+    projectId: "your-project-id",
+    storageBucket: "your-storage-bucket",
+    messagingSenderId: "your-messaging-sender-id"
   };
   firebase.initializeApp(config);
 </script>
-<script src="app.js">
- 
-</script>
+<script src="app.js"></script>
 </html>
