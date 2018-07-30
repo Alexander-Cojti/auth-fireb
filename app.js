@@ -12,6 +12,7 @@ function showProfile(user){
         email:user.email,
         displayName:user.displayName,
         phoneNumber:user.phoneNumber,
+        photoURL:user.photoURL
 
     }).then(function(){
         profile.setAttribute('class', 'show')
@@ -24,6 +25,7 @@ function showProfile(user){
             if (res.val().displayName) document.getElementById('username').value = res.val().displayName
             if (res.val().name) document.getElementById('name').value = res.val().name
             if (res.val().bio) document.getElementById('bio').value = res.val().bio
+            if (res.val().photoURL) document.getElementById('photo').src = res.val().photoURL
         })
     })
 
