@@ -7,12 +7,39 @@
     <title>LogIn Firebase</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase.js"></script>)
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCSPWyj358GPUoP102E-ztLjwwLu_hQz14",
+        authDomain: "login2-f6a4f.firebaseapp.com",
+        databaseURL: "https://login2-f6a4f.firebaseio.com",
+        projectId: "login2-f6a4f",
+        storageBucket: "",
+        messagingSenderId: "233998864465",
+        appId: "1:233998864465:web:6702395568e79df275a870"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
 
 </head>
 <body>
+
     <!--The profile section-->
     <section class="hide" id="profile">
-        <h1>Your Profile</h1>
+        <h1>Mi Perfil</h1>
         
         <article>
             <div>
@@ -32,35 +59,34 @@
     </section>
     <!--The Login section-->
     <section class="show" id="login">
-        <h1>Firebase Auth methods <img class="firebase" src="assets/pizza.png" alt=""></h1>
         <p id="error"></p>
         <article>                
             <div>
-                <h2>Social</h2>
+                <h2>Redes sociales</h2>
                 <button class="google" id="google">Google</button>
                 <button class="twitter" id="twitter">Twitter</button>
                 <button class="facebook" id="facebook">Facebook</button>
                 <button class="github" id="github">Github</button>
             </div>  
             <div>
-                <h2>Email/Password</h2>
+                <h2>Email</h2>
                 <h6>Register</h6>
                 <input type="email" id="email" placeholder="email@firebasemx.com">
-                <input type="password" id="password" placeholder="password">
+                <input type="password" id="password" placeholder="***">
                 <button id="register">Register</button>
                 <h6>Login</h6>
                 <input type="email" id="email2" placeholder="email@firebasemx.com">
-                <input type="password" id="password2" placeholder="password">
+                <input type="password" id="password2" placeholder="***">
                 <button id="emailLogin">LogIn</button>
                 
             </div>    
             <div>
-                <h2>Phone Number</h2>
-                <input type="text" id="number" placeholder="phone number" value="">        
-                <button class="number" id="numberButton">LogIn Number</button>
+                <h2>Número de telefono</h2>
+                <input type="text" id="number" placeholder="+502***" value="">        
+                <button class="number" id="numberButton">Enviar código</button>
                 <p id="recaptcha-container"></p>                                                  
-                <input type="text" id="code" placeholder="code">        
-                <button class="validatebtn" id="validate">Validate</button>
+                <input type="text" id="code" placeholder="***">        
+                <button class="validatebtn" id="validate">Validar</button>
             </div>
         </article>
 
@@ -68,15 +94,5 @@
 </body>
 
 
-
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-      //your keys
-    
-  };
-  firebase.initializeApp(config);
-</script>
 <script src="app.js"></script>
 </html>

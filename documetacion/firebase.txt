@@ -1,0 +1,26 @@
+fire base-tools
+firebase login
+
+IN FOLDER PROJECT
+firebase init
+firebase deploy
+
+https://login2-f6a4f.firebaseapp.com
+
+
+
+email 
+habilitar
+
+facebook developer
+crear aplicacion 
+configurar inicio de sesion 
+uri
+callback 
+home redireccionamiento 
+
+github
+crear OAuth
+callback 
+id/id-secret
+

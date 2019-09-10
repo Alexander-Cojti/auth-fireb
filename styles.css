@@ -30,29 +30,42 @@ input{
     margin-bottom: 10px;
 }
 .facebook{
-    padding: 1.3%;
+    padding: 3%;
     background-color: #4266b2;
     color: whitesmoke;
 }
 .github{
-    padding: 1.3%;
+    padding: 3%;
     background-color: #25292f;
     color: whitesmoke;
 }
 .twitter{
-    padding: 1.3%;
+    padding: 3%;
     background-color: #1ea0f2;
     color: whitesmoke;
 }
 .google{
-    padding: 1.3%;
+    padding: 3%;
     background-color: #ea4235;
     color: whitesmoke;
 }
 .number{
-    background-color: #25D366;
+    background-color: rgb(18, 140, 145);
     color: whitesmoke;
 }
+.validatebtn{
+    background-color: rgb(18, 140, 145);
+    color: whitesmoke;
+}
+#emailLogin {
+    background-color: rgb(44, 8, 44);
+    color: whitesmoke;
+}
+#register {
+    background-color: rgb(44, 9, 12);
+    color: whitesmoke;
+}
+
 h1{
     font-size: 2rem;
 }

@@ -93,9 +93,18 @@ var validateButton = document.getElementById('validate')
 numberButton.addEventListener('click', function(){
     var number = document.getElementById('number').value
     console.log(number)
-    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-    var appVerifier = window.recaptchaVerifier;
-    
+ 
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+        "recaptcha-container",
+        {
+            size: "invisible",
+            callback: function(response) {
+                // reCAPTCHA solved, allow signInWithPhoneNumber.
+                onSignInSubmit();
+            }
+        }
+        );
+        var appVerifier = window.recaptchaVerifier;
  
     firebase.auth().signInWithPhoneNumber(number, appVerifier)
         .then(function (confirmationResult) {                
